@@ -10,7 +10,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/vasusen-code/VIDEOconvertor/blob/public/LICENSE> .
+#  License can be found in < https://github.com/StupidBoi7/VIDEOconvertor/blob/public/LICENSE> .
 
 import os, subprocess, time
 
@@ -27,7 +27,7 @@ from LOCAL.localisation import SUPPORT_LINK, JPG, JPG2
 
 async def mp3(event, msg):
     Drone = event.client
-    edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
+    edit = await Drone.send_message(event.chat_id, "Trying to process...!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
     else:
@@ -121,7 +121,7 @@ async def flac(event, msg):
 
 async def wav(event, msg):
     Drone = event.client
-    edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
+    edit = await Drone.send_message(event.chat_id, "Trying to process...!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
     else:
@@ -214,7 +214,7 @@ async def mp4(event, msg):
                                            
 async def mkv(event, msg):
     Drone = event.client
-    edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
+    edit = await Drone.send_message(event.chat_id, "Trying to process...!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
     else:
@@ -259,7 +259,7 @@ async def mkv(event, msg):
              
 async def webm(event, msg):
     Drone = event.client
-    edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
+    edit = await Drone.send_message(event.chat_id, "Trying to process...!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
     else:
@@ -304,7 +304,7 @@ async def webm(event, msg):
              
 async def file(event, msg):
     Drone = event.client
-    edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
+    edit = await Drone.send_message(event.chat_id, "Trying to process...!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
     else:
@@ -339,7 +339,7 @@ async def file(event, msg):
     
 async def video(event, msg):
     Drone = event.client
-    edit = await Drone.send_message(event.chat_id, "Trying to process!", reply_to=msg.id)
+    edit = await Drone.send_message(event.chat_id, "Trying to process...!", reply_to=msg.id)
     if hasattr(msg.media, "document"):
         file = msg.media.document
     else:
