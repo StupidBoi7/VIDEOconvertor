@@ -10,7 +10,7 @@
 #  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
 #  General Public License for more details.
 #
-#  License can be found in < https://github.com/vasusen-code/VIDEOconvertor/blob/public/LICENSE> .
+#  License can be found in < https://github.com/StupidBoi7/VIDEOconvertor/blob/public/LICENSE> .
 
 import asyncio, time, subprocess, re, os
 
@@ -30,7 +30,7 @@ async def compress(event, msg, ffmpeg_cmd=0, ps_name=None):
     Drone = event.client
     if ps_name is None:
         ps_name = '**COMPRESSING:**'
-    edit = await Drone.send_message(event.chat_id, "Trying to process.", reply_to=msg.id)
+    edit = await Drone.send_message(event.chat_id, "Trying to process.....", reply_to=msg.id)
     new_name = "out_" + dt.now().isoformat("_", "seconds")
     if hasattr(msg.media, "document"):
         file = msg.media.document
@@ -55,7 +55,7 @@ async def compress(event, msg, ffmpeg_cmd=0, ps_name=None):
         out = new_name + ext
     DT = time.time()
     try:
-        await fast_download(n, file, Drone, edit, DT, "**DOWNLOADING:**")
+        await fast_download(n, file, Drone, edit, DT, "**DOWNLOADING...:**")
     except Exception as e:
         os.rmdir("encodemedia")
         print(e)
